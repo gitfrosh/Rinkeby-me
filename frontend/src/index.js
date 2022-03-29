@@ -4,11 +4,14 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
-
+import { ThirdwebProvider } from "@thirdweb-dev/react";
 ReactDOM.render(
   <StrictMode>
     <ColorModeScript />
+    <ThirdwebProvider supportedChains={[4]} desiredChainId={4}>
     <App />
+    </ThirdwebProvider>
+
   </StrictMode>,
   document.getElementById('root')
 );
