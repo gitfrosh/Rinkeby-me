@@ -8,7 +8,6 @@ import {
   Icon,
   Alert,
   AlertIcon,
-  createIcon,
   Image,
   Link,
   useColorModeValue,
